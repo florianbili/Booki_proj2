@@ -14,7 +14,7 @@ section{
     width: 100%;
 }
 article {
-    line-height: 25px;
+    line-height: 20px;
 }
 body{
     margin: 3%;
@@ -39,6 +39,7 @@ button {
     display: flex;
     flex-direction: row;
     color: #0065FC;
+    padding-top: 20px;
 }
 .cards h1{
     text-align: left;
@@ -84,11 +85,11 @@ header p{
 
 .logo{
     width: 50%;
-    padding-top: 2%;
+    padding-top: 3%;
 }
 
 .logo img{
-    width: 12%;
+    width: 10%;
 }
 
 
@@ -99,7 +100,7 @@ header p{
 }
 .aside_nav ul{
     padding-top: 6%;
-    border-top: 4px solid white;
+    border-top: 3px solid white;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -188,7 +189,7 @@ header p{
     display: flex;
     list-style: none;
     flex-direction: row;
-    width: 80%;
+    width: 85%;
     justify-content: space-between;
     
     align-items: center;
@@ -206,6 +207,9 @@ header p{
     background-color: #FFFFFF;
     color: black;
     font-weight: bold;
+    min-width: 180px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .filter button:hover{
@@ -269,7 +273,7 @@ main {
     border-radius: 25px;
     background-color: #FFFFFF;
     width: 31%;
-    padding: 1%;
+    padding: 5px;
 }
 
 .main_card img{
@@ -278,6 +282,10 @@ main {
     width: 100%;
     object-fit: cover;
 
+}
+
+.hebergements_description{
+    padding-left: 3%;
 }
 
 .main_content{
@@ -298,7 +306,7 @@ main {
 
 .activities_card img{
     width: 100%;
-    height: 350px;
+    height: 400px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
@@ -307,7 +315,8 @@ main {
     border-radius: 0px 0px 20px 20px;
     font-size: 1em;
     font-weight: 700;
-    padding: 2%;
+    padding: 5%;
+    padding-left: 20px;
 }
 .main_activities h3{
     padding: 2%;
@@ -319,9 +328,9 @@ main {
 
 .activities {
     display: flex ;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: auto;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 /*<--Aside-->*/  
 
@@ -357,16 +366,16 @@ aside i{
 .aside_card{
     background-color: #FFFFFF;
     border-radius: 20px;
-    border: 4px solid white;
     box-shadow: 0px 2px 8px grey;
     display: flex;
     align-items: center;
     margin-bottom: 5%;
     margin-top: 5%;
+    padding: 5px;
 }
 
 aside img{
-    min-width: 50%;
+    min-width: 45%;
     height: 144px;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
@@ -376,8 +385,7 @@ aside img{
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 1%;
-    height: 140px;
+    padding: 3%;
     justify-content: space-between;
 }
 
@@ -452,6 +460,9 @@ p{
 @media screen and (max-width: 992px ){
 
 
+    .view {
+        padding: 2%;
+    }
     .filter{
         width: 100%;
     }
@@ -480,28 +491,30 @@ p{
 
     .main_content h1{
         margin-left: 2%;
-    }
-    .main_card{
-        width: 29%;
+        margin-top: 2%;
     }
 
+    .main_card{
+        width: auto;
+        padding: 5px;
+    }
     .main_card img{
-        max-width: unset;
+      width: 240px;
+        height: 120px;
     }
 
     .cards h3{
-        margin-top: 2%;
-        margin-bottom: 1%;
+        margin-top: 1%;
+        margin-bottom: 3%;
     }
     .cards{
         justify-content: space-evenly;
+        margin-top: 2%;
+        gap: 30px;
 
     }
     .cards h3:last-child{
         margin-left: 3%;
-    }
-    .cards article{
-        margin: 2%;
     }
 
 
@@ -526,13 +539,10 @@ p{
     .aside_main{
         display: flex;
         flex-direction: row;
+        gap: 2%;
+    }
 
-    }
-    .aside_main article{
-        width: 30%;
-    }
     .aside_card{
-        margin: 2%;
         width: 100%;
     }
 
@@ -541,13 +551,15 @@ p{
     }
 
     aside img{
+        width: 106px;
+        height: 144px;
         object-fit: cover;
-    }
-    .activities_card{
-        width: 20%;
     }
     .activities_card img{
         height: 200px;
+    }
+    .activities_card article{
+        line-height: unset;
     }
 
     
@@ -598,6 +610,10 @@ p{
         display: none;
     }
 
+    .search_main{
+        width: 100%;
+    }
+
     .search_main div{
         width: 15%;
     }
@@ -621,7 +637,9 @@ p{
     }
 
     .filter button{
-        width: 85%;
+        width: 205px;
+        height: 55px;
+
     }
 
     .filter h2{
@@ -651,6 +669,7 @@ p{
         width: 100%;
         padding-left: 0;
         text-align: center;
+        gap: 0;
        
     }
 
@@ -699,10 +718,11 @@ p{
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        gap: unset;
     }
     .aside_main article{
-        width: 100%;
-        margin-left: 0;
+        width:95%;
+        margin: auto;
     }
 
     aside {
@@ -710,7 +730,9 @@ p{
     }
 
     aside img{
-        height: 210px;
+        width: 137px;
+        height: 144px;
+        padding-left: 5px;
         
     }
 
@@ -724,10 +746,8 @@ p{
         background-color: #F2F2F2;
         border-radius: unset;
         margin-bottom: 5%;
+        padding-bottom: 10%;
         
-    }
-    .popular_between{
-        height: 195px;
     }
     .activities{
         width: 100%;
@@ -741,7 +761,7 @@ p{
         padding-left: 0;
     }
     .main_slideshow h1{
-        padding-left: 3%;
+        margin-left: 4%;
     }
     .main_activities{
         width: 100%;
@@ -753,6 +773,10 @@ p{
     .main_activities h2{
         margin-left: 3%;
         margin-bottom: 0;
+    }
+
+    #activities {
+        margin-left: 4%;
     }
 
     .main_card{
