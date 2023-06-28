@@ -274,6 +274,7 @@ main {
     background-color: #FFFFFF;
     width: 31%;
     padding: 5px;
+    min-width: 180px;
 }
 
 .main_card img{
@@ -286,6 +287,9 @@ main {
 
 .hebergements_description{
     padding-left: 3%;
+}
+.hebergements_description h3{
+    white-space: nowrap;
 }
 
 .main_content{
@@ -385,7 +389,7 @@ aside img{
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    padding: 1%;
     justify-content: space-between;
 }
 
@@ -461,7 +465,7 @@ p{
 
 
     .view {
-        padding: 2%;
+        padding: 1%;
     }
     .filter{
         width: 100%;
@@ -495,11 +499,10 @@ p{
     }
 
     .main_card{
-        width: auto;
+        width: 30%;
         padding: 5px;
     }
     .main_card img{
-      width: 240px;
         height: 120px;
     }
 
