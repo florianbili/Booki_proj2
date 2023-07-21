@@ -41,7 +41,7 @@ button {
     color: #0065FC;
     padding-top: 20px;
 }
-.cards h1{
+.cards h2{
     text-align: left;
 }
 
@@ -199,7 +199,7 @@ header p{
     margin-right: 6px;
 }
 
-.filter h1{
+.filter h2{
     margin-left: 10px;
 }
 
@@ -399,7 +399,7 @@ aside img{
     justify-content: space-between;
 }
 
-.aside_slideshow h1{
+.aside_slideshow h2{
     margin-bottom: 3%;
 }
 
@@ -453,8 +453,8 @@ h3 {
 }
 
 h2{
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight:  700;
 }
 
 h1{
@@ -504,7 +504,7 @@ p{
 
     }
 
-    .main_content h1{
+    .main_content h2{
         margin-left: 2%;
         margin-top: 2%;
     }
@@ -543,7 +543,7 @@ p{
         width: 100%;
     }
 
-    .aside_slideshow h1 {
+    .aside_slideshow h2 {
         margin-bottom: 0;
     }
     .aside_header{
@@ -664,7 +664,7 @@ p{
         height: 55px;
 
     }
-    .filter h1{
+    .filter h2{
         margin-left: 0;
     }
 
@@ -731,7 +731,7 @@ p{
     .main_content{
         display: flex;
     }
-    .main_content h1 {
+    .main_content h2 {
         margin-left: 0;
     }
     .main_slideshow{
@@ -760,7 +760,7 @@ p{
         padding: 3%;
     }
 
-    .aside_header h1{
+    .aside_header h2{
         margin-bottom: 5%;
     }
     .aside_header {
@@ -797,7 +797,7 @@ p{
     .main_slideshow{
         padding-left: 0;
     }
-    .main_slideshow h1{
+    .main_slideshow h2{
         margin-left: 4%;
     }
     .main_activities{
